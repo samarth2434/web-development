@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    width: 100%  ;
+}
+
+.container{
+    height:100%;                                           
+    width: 100%;
+    background-color: rgb(59, 49, 49);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,200px);
+    gap: 0.4rem;
+    padding: 4rem;
+    border: 2px solid white;
+    /* justify-items: end;    */
+    /* align-items: stretch; */
+}
+
+.item{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(39, 196, 62);
+    border: 5px solid rgb(214, 206, 206);
+    /* justify-self: end;
+    align-self: end; */
+    /* place-self: stretch; */
+}
