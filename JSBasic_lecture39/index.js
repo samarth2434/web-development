@@ -85,16 +85,62 @@ console.log(rectangleObject);
 
 // console.log(a); // ye jo a print karwaya hai vo first line wala a hai
 
-let rectangle = {
-    length: 2,
-    breadth: 4
-};
+// let rectangle = {
+//     length: 2,
+//     breadth: 4
+// };
 
-//for-in loop
-for(let key in rectangle){
-    //keys are reflected through key variable
-    //values are reflected through rectangle[key]
-    console.log(key,rectangle[key]);
-}
+// //for-in loop
+// for(let key in rectangle){
+//     //keys are reflected through key variable
+//     //values are reflected through rectangle[key]
+//     console.log(key,rectangle[key]);
+// }
+
+//object clone--1)iteration
+// let src = {
+//     a:10,
+//     b:20,
+//     c:30
+// };
+
+// let dest = {};
+
+// for(let key in src){
+//     dest[key] = src[key];
+// }
+
+// console.log(dest);
+
+//object clone--2)assign
+
+// let src = {
+//     a:10,
+//     b:20,
+//     c:30
+// };
+
+// let src2 = { value: 25};
+
+// let dest = Object.assign({}, src, src2);
+
+// console.log(dest);
+
+// src.a++;
+// console.log(dest);
+
+//object clone--3) spread
+// let src = {
+//     a:10,
+//     b:20,
+//     c:30
+// };
+
+// let dest = {...src};
+
+// console.log(dest);
+
+// src.a++;
+// console.log(dest);
 
 

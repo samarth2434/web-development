@@ -38,39 +38,39 @@ console.log('Namaste Dunia i am samarth gupta');
 // else{
 //     console.log('E');
 // }
+// ----- switch case
 
-//----- switch case
+let num = 0;
 
-// let num = 2;
+switch(num){
+    case 1: console.log('A');
+    break;
+    case 2: console.log('B');
+    break;
+    case 3 : console.log('C');
+    break;
+    default : console.log('D');
+}
 
-// switch(num){
-//     case 1: console.log('A');
-//     break;
-//     case 2: console.log('B');
-//     break;
-//     case 3 : console.log('C');
-//     break;
-//     default : console.log('D');
-// }
 
 //--- for loop
 
-for(let i = 0; i<10; i++){
-    console.log(i);
-}
+// for(let i = 0; i<10; i++){
+//     console.log(i);
+// }
 
 //--- while loop
 
-let i = 0;
-while(i<10){ 
-    console.log(i);
-    i++;
-}
+// let i = 0;
+// while(i<10){ 
+//     console.log(i);
+//     i++;
+// }
 
 // --- do shile loop
 
-let x = 0;
-do{
-    console.log(x);
-    i++;
-}while(x<10);
+// let x = 0;
+// do{
+//     console.log(x);
+//     i++;
+// }while(x<10);
