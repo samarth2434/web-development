@@ -124,7 +124,47 @@ let lastName = 'Babbar';
 
 //split method -- array me convert kar deta hain
 
-let message = 'This is my first message'
-let parts = message.split(' ');
-console.log(parts);
+// let message = 'This is my first message'
+// let parts = message.split(' ');
+// console.log(parts);
 
+//------sorting array
+
+// let numbers = [40,30,10,20,50];
+// let numbers = [5,10,4,40]; //output wrong aa rha hai toh isme predicate function use karege function ko call karege 
+
+// numbers.sort();
+// console.log(numbers);
+
+//-----filtering array
+// let numbers = [1,2,-1,-4];
+
+// let filtered = numbers.filter(function(value){
+//     // return value>=0;  // for positive
+//     return value < 0;  //for negative
+// });
+
+// console.log(filtered);
+
+//------mapping array
+
+// let numbers = [7,8,9,10];
+
+// let items = numbers.map(function(value){
+//     return 'student_no' + value;
+// });
+// console.log(items);
+
+//----- mapping with objects 
+
+let numbers = [1,2,-6,-9];
+// let filtered  = numbers.filter(value => value >= 0);
+
+// let items = filtered.map(num => {value: num});
+
+// concept of chaniing
+let items =numbers
+           .filter(value => value >= 0)
+           .map(num => {value: num});
+
+console.log(items);
