@@ -69,20 +69,71 @@
 //----Getter Setter
 //getter --> access properties
 //setter--> change or mutate properties
-let person = {
-    fName : 'Love',
-    lName : 'Babbar',
-    get fullName(){
-        return `${person.fName} ${person.lName}`;
-    },
-// console.log(person);
-set fullName(Value){
-    let parts = Value.split(' ');
-    this.fName = parts[0];
-    this.lName = parts[1];
-}
-};
+
+// let person = {
+//     fName : 'Love',
+//     lName : 'Babbar',
+//     get fullName(){
+//         return `${person.fName} ${person.lName}`;
+//     },
+// // console.log(person);
+// set fullName(Value){
+//     let parts = Value.split(' ');
+//     this.fName = parts[0];
+//     this.lName = parts[1];
+// }
+// };
 // console.log(person.fullName);  //output Love Babbar
 
-person.fullName = 'samarth gupta'
-console.log(person.fullName);
+// person.fullName = 'samarth gupta'
+// console.log(person.fullName);
+
+// try and catch property
+// try {
+//     person.fullName = 'samarth';
+// }
+// catch(e){
+//     alert('you have sent a number in fullNmae');
+// };
+
+// console.log(person.fullName);
+
+//----scope
+
+// {
+//     let a = 5;
+//     console.log(a);
+// }
+
+// function walk(){
+//     var a = 5;
+// }
+// console.log(a);
+
+// for(var i = 0; i<10; i++){
+
+// }
+// console.log(i);
+
+
+//------- add the numbers 
+// function sum(a,b){
+//     let total = 0;
+//     for(let value of arguments )
+//     total = total + value;
+// return total;
+// }
+// let ans = sum(1,2,3,4);
+// console.log(ans);
+
+let arr = [1,2,3,4];
+// let total = 0;
+
+// for(let value of arr)
+//     total= total + value;
+
+// console.log(total);
+
+let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log("PRINTING TOTAL SUM:")
+console.log(totalSum);
